@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Container = styled.main`
   & {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     align-items: center;
     flex-direction: column;
@@ -13,9 +13,11 @@ export const Container = styled.main`
 
     & > section {
       display: flex;
-      gap: 283px;
+      width: 75vw;
+      max-width: 1434px;
       align-items: center;
       flex-direction: row;
+      justify-content: space-between;
 
       & > div {
         display: flex;
@@ -54,6 +56,7 @@ export const Container = styled.main`
           & > svg {
             color: #000;
             cursor: pointer;
+            transition: color 0.33s ease;
 
             &:hover {
               color: #7b2cbf;
@@ -68,17 +71,19 @@ export const Container = styled.main`
         object-fit: contain;
       }
 
-      @media (max-width: 1440px) {
-        width: 90vw;
-        gap: 0;
-        justify-content: space-between;
-
+      @media (max-width: 1600px) {
         img {
           width: 430px;
         }
       }
 
+      @media (max-width: 1440px) {
+        width: 85vw;
+      }
+
       @media (max-width: 1024px) {
+        padding: 0;
+
         & > div {
           display: flex;
 
