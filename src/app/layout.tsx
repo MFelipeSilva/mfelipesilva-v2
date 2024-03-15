@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 
+import "../../public/css/global.css";
+
 const inter = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -14,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={inter.className}>{children}</body>
     </html>
   );
