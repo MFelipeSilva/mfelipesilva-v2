@@ -3,6 +3,7 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 
 import { Navbar } from "./navbar";
+import { Footer } from "./footer";
 
 interface ILayoutProps {
   children: ReactNode;
@@ -18,6 +19,7 @@ export const Layout = ({ children }: ILayoutProps) => {
     <LayoutContainer>
       <Navbar />
       {children}
+      <Footer />
     </LayoutContainer>
   );
 };
