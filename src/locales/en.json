@@ -1,0 +1,15 @@
+{
+  "en": {
+    "translation": {
+      "navbar": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+      },
+      "home": {
+        "title": "Felipe da silva",
+        "subtitle": "Full-stack Web Developer."
+      }
+    }
+  }
+}

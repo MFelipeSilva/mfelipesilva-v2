@@ -2,6 +2,8 @@ import React, { ReactNode } from "react";
 
 import styled from "styled-components";
 
+import "@/utils/i18n";
+
 import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 

@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { useTranslation } from "react-i18next";
+
 import styled from "styled-components";
 
 import { IconGlobe, IconLightMode, IconMenu } from "./icons";
@@ -101,19 +103,21 @@ export const Header = styled.header`
 `;
 
 export const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <Header>
       <nav>
         <span>Logo</span>
         <ul>
           <li>
-            <Link href="#">Sobre</Link>
+            <Link href="#">{t("navbar.about")}</Link>
           </li>
           <li>
-            <Link href="#">Projetos</Link>
+            <Link href="#">{t("navbar.projects")}</Link>
           </li>
           <li>
-            <Link href="#">Contato</Link>
+            <Link href="#">{t("navbar.contact")}</Link>
           </li>
         </ul>
         <div>

@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import { useTranslation } from "react-i18next";
+
 import {
   IconEmail,
   IconGithub,
@@ -16,14 +18,16 @@ import ilustration from "../../../public/images/ilustration-image.png";
 import { Container } from "./style";
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <Layout>
       <Container>
         <section>
           <div>
             <div>
-              <h1>Felipe da silva</h1>
-              <h2>Desenvolvedor Web Full-stack.</h2>
+              <h1>{t("home.title")}</h1>
+              <h2>{t("home.subtitle")}</h2>
             </div>
             <div />
             <div>

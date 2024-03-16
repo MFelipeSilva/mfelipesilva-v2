@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 
-import GlobalStyle from "@/styles/global";
+import "../styles/global.css";
 
 const inter = Lexend({ subsets: ["latin"] });
 
@@ -17,7 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <GlobalStyle />
       <body className={inter.className}>{children}</body>
     </html>
   );
