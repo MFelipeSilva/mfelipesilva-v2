@@ -27,10 +27,18 @@ export default function Home() {
             </div>
             <div />
             <div>
-              <IconEmail />
-              <IconGithub />
-              <IconLinkedin />
-              <IconInstagram />
+              <div>
+                <IconEmail />
+              </div>
+              <div>
+                <IconGithub />
+              </div>
+              <div>
+                <IconLinkedin />
+              </div>
+              <div>
+                <IconInstagram />
+              </div>
             </div>
           </div>
           <Image src={ilustration} alt="ilustration" />

@@ -51,7 +51,7 @@ export const Container = styled.main`
           align-items: center;
           justify-content: center;
 
-          & > svg {
+          & > div > svg {
             color: #000;
             cursor: pointer;
             transition: color 0.33s ease;
