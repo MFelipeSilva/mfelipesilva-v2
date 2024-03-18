@@ -9,9 +9,8 @@ import { IconGlobe, IconLightMode, IconMenu } from "./icons";
 export const Header = styled.header`
   display: flex;
   width: 100%;
-  height: 6em;
-  position: absolute;
-  align-items: center;
+  height: 5em;
+  align-items: end;
   flex-direction: row;
   justify-content: center;
 
@@ -111,7 +110,7 @@ export const Navbar = () => {
         <span>Logo</span>
         <ul>
           <li>
-            <Link href="#">{t("navbar.about")}</Link>
+            <Link href="/about">{t("navbar.about")}</Link>
           </li>
           <li>
             <Link href="#">{t("navbar.projects")}</Link>

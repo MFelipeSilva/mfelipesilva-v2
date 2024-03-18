@@ -9,16 +9,16 @@ import {
 
 export const StyledFooter = styled.footer`
   display: flex;
-  position: absolute;
   width: 100%;
   height: 4em;
-  bottom: 0;
+
   align-items: center;
   justify-content: center;
 
   & > div {
     display: flex;
     width: 75vw;
+    max-width: 1434px;
     justify-content: space-between;
 
     & > span {
