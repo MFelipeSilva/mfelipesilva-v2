@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 import { IconGlobe, IconLightMode, IconMenu } from "./icons";
 
-export const Header = styled.header`
+export const StyledHeader = styled.header`
   display: flex;
   width: 100%;
   height: 5em;
@@ -16,8 +16,8 @@ export const Header = styled.header`
 
   & > nav {
     display: flex;
-    width: 75vw;
     max-width: 1434px;
+    width: 75vw;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +56,6 @@ export const Header = styled.header`
     }
 
     @media (max-width: 768px) {
-      margin: 0 50px;
       justify-content: space-between;
     }
 
@@ -94,10 +93,6 @@ export const Header = styled.header`
         }
       }
     }
-
-    @media (max-width: 1440px) {
-      width: 85vw;
-    }
   }
 `;
 
@@ -105,7 +100,7 @@ export const Navbar = () => {
   const { t } = useTranslation();
 
   return (
-    <Header>
+    <StyledHeader>
       <nav>
         <span>Logo</span>
         <ul>
@@ -131,6 +126,6 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
-    </Header>
+    </StyledHeader>
   );
 };
