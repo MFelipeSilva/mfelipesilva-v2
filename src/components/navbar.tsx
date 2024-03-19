@@ -22,9 +22,11 @@ export const StyledHeader = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    & > span {
+    & > a {
+      color: #000;
       font-size: 20px;
       font-weight: 600;
+      text-decoration: none;
       text-transform: uppercase;
     }
 
@@ -102,7 +104,9 @@ export const Navbar = () => {
   return (
     <StyledHeader>
       <nav>
-        <span>Logo</span>
+        <Link href="/">
+          <span>Logo</span>
+        </Link>
         <ul>
           <li>
             <Link href="/about">{t("navbar.about")}</Link>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
   & {
     display: flex;
+    min-height: 843px;
     width: 100%;
     height: 84vh;
     align-items: center;
@@ -11,13 +12,14 @@ export const Container = styled.main`
 
     & > section {
       display: flex;
-      width: 75vw;
       max-width: 1434px;
+      width: 75vw;
+      height: 100%;
       align-items: center;
       flex-direction: row;
       justify-content: space-between;
 
-      & > div {
+      & > div:nth-child(1) {
         display: flex;
         margin: 1.5em 0;
         align-items: center;
@@ -27,14 +29,14 @@ export const Container = styled.main`
           padding: 1em 0;
 
           & > h1 {
-            font-size: clamp(40px, 4vw, 55px);
+            font-size: clamp(35px, 3.5vw, 55px);
             color: #000;
             font-weight: 700;
             text-transform: uppercase;
           }
 
           & > h2 {
-            font-size: clamp(22px, 2.5vw, 32px);
+            font-size: clamp(22px, 2vw, 32px);
             font-weight: 300;
           }
         }
@@ -42,6 +44,14 @@ export const Container = styled.main`
         & > div:nth-child(2) {
           width: 305px;
           border-bottom: 2px solid #000000;
+
+          @media (max-width: 1280px) {
+            width: 70%;
+          }
+
+          @media (max-width: 480px) {
+            width: 80%;
+          }
         }
 
         & > div:nth-child(3) {
@@ -60,23 +70,46 @@ export const Container = styled.main`
               color: #7b2cbf;
             }
           }
+
+          @media (max-width: 1024px) {
+            & > div:nth-child(1) > svg {
+              width: 47px;
+            }
+            & > div > svg {
+              width: 40px;
+            }
+            & > div:nth-child(4) > svg {
+              width: 43px;
+            }
+          }
+
+          @media (max-width: 520px) {
+            & > div:nth-child(1) > svg {
+              width: 40px;
+            }
+            & > div > svg {
+              width: 35px;
+            }
+            & > div:nth-child(4) > svg {
+              width: 38px;
+            }
+          }
+        }
+
+        @media (max-width: 768px) {
+          width: auto;
         }
       }
 
-      img {
+      & > img {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
-      }
 
-      @media (max-width: 1600px) {
-        img {
-          width: 430px;
+        @media (max-width: 1440px) {
+          width: 45%;
+          height: 90%;
         }
-      }
-
-      @media (max-width: 1440px) {
-        width: 85vw;
       }
 
       @media (max-width: 1024px) {
@@ -84,26 +117,6 @@ export const Container = styled.main`
 
         & > div {
           display: flex;
-
-          & > div:nth-child(2) {
-            width: 255px;
-          }
-
-          & > div:nth-child(3) {
-            & > svg:nth-child(1) {
-              width: 47px;
-            }
-            & > svg {
-              width: 40px;
-            }
-            & > svg:nth-child(4) {
-              width: 43px;
-            }
-          }
-        }
-
-        img {
-          width: 320px;
         }
       }
 
@@ -117,24 +130,6 @@ export const Container = styled.main`
 
       @media (max-width: 520px) {
         width: 80vw;
-
-        & > div {
-          & > div:nth-child(2) {
-            width: 50vw;
-          }
-
-          & > div:nth-child(3) {
-            & > svg:nth-child(1) {
-              width: 40px;
-            }
-            & > svg {
-              width: 35px;
-            }
-            & > svg:nth-child(4) {
-              width: 38px;
-            }
-          }
-        }
       }
     }
   }
