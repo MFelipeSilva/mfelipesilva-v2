@@ -9,6 +9,13 @@
       "home": {
         "title": "Felipe da silva",
         "subtitle": "Desenvolvedor Web Full-stack."
+      },
+      "projects": {
+        "title": "Projetos",
+        "card": {
+          "url": "Site",
+          "github": "Ir para o Github."
+        }
       }
     }
   }

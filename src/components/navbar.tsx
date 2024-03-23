@@ -112,10 +112,10 @@ export const Navbar = () => {
             <Link href="/about">{t("navbar.about")}</Link>
           </li>
           <li>
-            <Link href="#">{t("navbar.projects")}</Link>
+            <Link href="/projects">{t("navbar.projects")}</Link>
           </li>
           <li>
-            <Link href="#">{t("navbar.contact")}</Link>
+            <Link href="/contact">{t("navbar.contact")}</Link>
           </li>
         </ul>
         <div>

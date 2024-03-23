@@ -1,4 +1,6 @@
 export * from "./menu";
+export * from "./arrow";
+export * from "./launch";
 export * from "./email";
 export * from "./globe";
 export * from "./github";

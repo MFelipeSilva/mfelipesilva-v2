@@ -9,6 +9,13 @@
       "home": {
         "title": "Felipe da silva",
         "subtitle": "Full-stack Web Developer."
+      },
+      "projects": {
+        "title": "Projects",
+        "card": {
+          "url": "Website",
+          "github": "Go to the Github."
+        }
       }
     }
   }
