@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import { useTranslation } from "react-i18next";
+
 import { Layout } from "@/components/layout";
 
 import { Container } from "./style";
@@ -9,28 +11,18 @@ import { Container } from "./style";
 import my_photo from "../../../public/images/my-photo.png";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <Layout>
       <Container>
         <section>
           <div>
-            <h1>Sobre mim</h1>
-            <p>
-              Eai! Meu nome é Mauricio Felipe da Silva e atualmente estou focado
-              em me tornar um desenvolvedor full-stack. Eu sempre tive interesse
-              no mundo da tecnologia, tanto que eu já tive um canal no qual eu
-              ensinava aos outros a criar banners, thumbnails, e como utilizar
-              algumas funcionalides em alguns aplicativos e programas. <br />
-              <br />E quando eu conheci o mundo do desenvolvimento web por meio
-              de um amigo, eu logo de cara tive o interesse na parte do
-              front-end. Desde então eu começei a estudar e criar pequenos
-              projetos que me fizeram adquirir ainda mais conhecimento e paixão
-              pela área. <br /> <br />
-              Atualmente essas são minhas principais tecnologias:
-            </p>
+            <h1>{t("about.title")}</h1>
+            <p dangerouslySetInnerHTML={{ __html: t("about.text") }} />
             <div>
               <div>
-                <p>Typescript </p>
+                <p>Typescript</p>
                 <p>React</p>
                 <p>JavaScript</p>
                 <p>Node.js</p>
