@@ -20,6 +20,22 @@
           "url": "Site",
           "github": "Ir para o Github."
         }
+      },
+      "contact": {
+        "title": "Contato",
+        "text": "Fique a vontade para me enviar um mensagem aqui ou contatar diretamente: <span>silvaafelipe016@gmail.com.</span>",
+        "form": {
+          "name": "Nome",
+          "email": "Email",
+          "message": "Mensagem",
+          "errors": {
+            "name": "Por favor, adicione o seu nome.",
+            "minEmail": "O email é obrigatório.",
+            "errorEmail": "Formato de email inválido.",
+            "message": "Por favor, adicione um pequeno texto."
+          }
+        },
+        "button": "Enviar"
       }
     }
   }
