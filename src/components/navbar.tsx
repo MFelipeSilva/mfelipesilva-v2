@@ -4,7 +4,15 @@ import { useTranslation } from "react-i18next";
 
 import styled from "styled-components";
 
-import { IconGlobe, IconLightMode, IconMenu } from "./icons";
+import {
+  IconBrazil,
+  IconGlobe,
+  IconLightMode,
+  IconMenu,
+  IconUnitedStates,
+} from "./icons";
+import { Popover } from "antd";
+import i18n from "@/utils/i18n";
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -65,10 +73,13 @@ export const StyledHeader = styled.header`
       display: flex;
       gap: 5px;
 
-      & > div {
+      & > div > button {
         display: flex;
         padding: 7px;
         border-radius: 8px;
+        border: none;
+        outline: none;
+        background-color: transparent;
         transition: color 0.55s ease, background-color 0.55s ease;
 
         &:hover {
@@ -98,8 +109,44 @@ export const StyledHeader = styled.header`
   }
 `;
 
+const Content = styled.div`
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+
+  span {
+    display: flex;
+    gap: 0.7em;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 8px;
+    align-items: center;
+    text-transform: uppercase;
+    transition: color 0.55s ease, background-color 0.55s ease;
+
+    &:hover {
+      color: #7b2cbf;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+`;
+
 export const Navbar = () => {
   const { t } = useTranslation();
+
+  const content = (
+    <Content>
+      <span onClick={() => i18n.changeLanguage("pt")}>
+        <IconBrazil />
+        Pt-br
+      </span>
+      <span onClick={() => i18n.changeLanguage("en")}>
+        <IconUnitedStates />
+        En
+      </span>
+    </Content>
+  );
 
   return (
     <StyledHeader>
@@ -120,13 +167,21 @@ export const Navbar = () => {
         </ul>
         <div>
           <div>
-            <IconGlobe />
+            <Popover placement="bottomRight" trigger="click" content={content}>
+              <button>
+                <IconGlobe />
+              </button>
+            </Popover>
           </div>
           <div>
-            <IconLightMode />
+            <button>
+              <IconLightMode />
+            </button>
           </div>
           <div>
-            <IconMenu />
+            <button>
+              <IconMenu />
+            </button>
           </div>
         </div>
       </nav>
