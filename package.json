@@ -12,6 +12,7 @@
     "@hookform/resolvers": "^3.3.4",
     "@types/styled-components": "^5.1.34",
     "antd": "^5.15.4",
+    "framer-motion": "^11.0.22",
     "i18next": "^23.10.1",
     "i18next-browser-languagedetector": "^7.2.0",
     "next": "14.1.3",
