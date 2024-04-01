@@ -36,12 +36,9 @@ export const StyledHeader = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    & > a {
-      color: #000;
-      font-size: 20px;
-      font-weight: 600;
-      text-decoration: none;
-      text-transform: uppercase;
+    & > div > a > img {
+      width: 50px;
+      height: 50px;
     }
 
     & > ul {
@@ -156,9 +153,11 @@ export const Navbar = () => {
   return (
     <StyledHeader>
       <nav>
-        <Link href="/">
-          <Image src={logo} alt="logo" width={50}></Image>
-        </Link>
+        <div>
+          <Link href="/">
+            <img src="https://i.ibb.co/zGSd4BW/logo-white.png" alt="logo" />
+          </Link>
+        </div>
         <ul>
           <li>
             <Link href="/about">{t("navbar.about")}</Link>
