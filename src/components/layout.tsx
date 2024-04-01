@@ -16,6 +16,11 @@ interface ILayoutProps {
 export const LayoutContainer = styled.div`
   width: 100%;
   height: 100%;
+
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const Layout = ({ children }: ILayoutProps) => {
