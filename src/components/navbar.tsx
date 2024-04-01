@@ -1,8 +1,16 @@
 import Link from "next/link";
 
+import Image from "next/image";
+
+import { Popover } from "antd";
+
+import i18n from "@/utils/i18n";
+
 import { useTranslation } from "react-i18next";
 
 import styled from "styled-components";
+
+import logo from "../../public/images/logo.png";
 
 import {
   IconBrazil,
@@ -11,8 +19,6 @@ import {
   IconMenu,
   IconUnitedStates,
 } from "./icons";
-import { Popover } from "antd";
-import i18n from "@/utils/i18n";
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -111,7 +117,7 @@ export const StyledHeader = styled.header`
 
 const Content = styled.div`
   display: flex;
-  gap: 1em;
+  gap: 0.5em;
   flex-direction: column;
 
   span {
@@ -126,7 +132,6 @@ const Content = styled.div`
     transition: color 0.55s ease, background-color 0.55s ease;
 
     &:hover {
-      color: #7b2cbf;
       background-color: rgba(0, 0, 0, 0.1);
     }
   }
@@ -152,7 +157,7 @@ export const Navbar = () => {
     <StyledHeader>
       <nav>
         <Link href="/">
-          <span>Logo</span>
+          <Image src={logo} alt="logo" width={50}></Image>
         </Link>
         <ul>
           <li>
