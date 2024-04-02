@@ -1,17 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import { useTranslation } from "react-i18next";
 
-import {
-  IconEmail,
-  IconGithub,
-  IconLinkedin,
-  IconInstagram,
-} from "@/components/icons";
+import { motion } from "framer-motion";
 
 import { Layout } from "@/components/layout";
+
+import { iconsData } from "@/utils/iconsData";
 
 import ilustration from "../../../public/images/ilustration-image.png";
 
@@ -31,18 +29,23 @@ export default function Home() {
             </div>
             <div />
             <div>
-              <div>
-                <IconEmail />
-              </div>
-              <div>
-                <IconGithub />
-              </div>
-              <div>
-                <IconLinkedin />
-              </div>
-              <div>
-                <IconInstagram />
-              </div>
+              {iconsData.map((icon) => (
+                <motion.div
+                  key={icon.id}
+                  initial={{
+                    scale: 1,
+                  }}
+                  whileHover={{ scale: 1.2 }}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <Link href={icon.url} target="_blank">
+                    {icon.icon}
+                  </Link>
+                </motion.div>
+              ))}
             </div>
           </div>
           <Image src={ilustration} alt="ilustration" />

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
   & {
     display: flex;
-    min-height: 843px;
+    min-height: 700px;
     width: 100%;
     height: 84vh;
     align-items: center;
@@ -61,7 +61,7 @@ export const Container = styled.main`
           align-items: center;
           justify-content: center;
 
-          & > div > svg {
+          & > div > a > svg {
             color: #000;
             cursor: pointer;
             transition: color 0.33s ease;
@@ -73,7 +73,7 @@ export const Container = styled.main`
 
           @media (max-width: 1024px) {
             & > div:nth-child(1) > svg {
-              width: 47px;
+              width: 35px;
             }
             & > div > svg {
               width: 40px;
@@ -85,7 +85,7 @@ export const Container = styled.main`
 
           @media (max-width: 520px) {
             & > div:nth-child(1) > svg {
-              width: 40px;
+              width: 30px;
             }
             & > div > svg {
               width: 35px;
@@ -105,6 +105,12 @@ export const Container = styled.main`
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+        scale: 1;
+        transition: scale 1s ease-in-out;
+
+        &:hover {
+          scale: 1.2;
+        }
 
         @media (max-width: 1440px) {
           width: 45%;

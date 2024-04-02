@@ -1,11 +1,8 @@
+import Link from "next/link";
+
 import styled from "styled-components";
 
-import {
-  IconEmail,
-  IconGithub,
-  IconLinkedin,
-  IconInstagram,
-} from "@/components/icons";
+import { iconsData } from "@/utils/iconsData";
 
 export const StyledFooter = styled.footer`
   display: flex;
@@ -33,10 +30,10 @@ export const StyledFooter = styled.footer`
       justify-content: center;
 
       & > div:nth-child(1) > svg {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
       }
-      & > div > svg {
+      & > a > svg {
         cursor: pointer;
         width: 22px;
         height: 22px;
@@ -47,8 +44,8 @@ export const StyledFooter = styled.footer`
         }
       }
       & > div:nth-child(4) > svg {
-        width: 23.5px;
-        height: 23.5px;
+        width: 24px;
+        height: 24px;
       }
     }
 
@@ -66,18 +63,11 @@ export const Footer = () => {
       <div>
         <span>© Copyright 2024 - Felipe Da Silva</span>
         <div>
-          <div>
-            <IconEmail />
-          </div>
-          <div>
-            <IconGithub />
-          </div>
-          <div>
-            <IconLinkedin />
-          </div>
-          <div>
-            <IconInstagram />
-          </div>
+          {iconsData.map((icon) => (
+            <Link key={icon.id} href={icon.url} target="_blank">
+              {icon.icon}
+            </Link>
+          ))}
         </div>
       </div>
     </StyledFooter>
