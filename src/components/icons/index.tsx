@@ -1,4 +1,5 @@
 export * from "./menu";
+export * from "./close";
 export * from "./arrow";
 export * from "./launch";
 export * from "./curriculum";

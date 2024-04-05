@@ -72,25 +72,25 @@ export const Container = styled.main`
           }
 
           @media (max-width: 1024px) {
-            & > div:nth-child(1) > svg {
+            & > div:nth-child(1) > a > svg {
               width: 35px;
             }
-            & > div > svg {
+            & > div > a > svg {
               width: 40px;
             }
-            & > div:nth-child(4) > svg {
+            & > div:nth-child(4) > a > svg {
               width: 43px;
             }
           }
 
           @media (max-width: 520px) {
-            & > div:nth-child(1) > svg {
+            & > div:nth-child(1) > a > svg {
               width: 30px;
             }
-            & > div > svg {
+            & > div > a > svg {
               width: 35px;
             }
-            & > div:nth-child(4) > svg {
+            & > div:nth-child(4) > a > svg {
               width: 38px;
             }
           }

@@ -95,6 +95,6 @@ export const Container = styled.main`
 
   @media (max-width: 768px) {
     height: 100%;
-    padding: 5em 0;
+    padding: 6em 0;
   }
 `;

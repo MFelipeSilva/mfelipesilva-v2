@@ -1,4 +1,4 @@
-export const IconMenu = () => (
+export const IconClose = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="30px"
@@ -11,30 +11,31 @@ export const IconMenu = () => (
       stroke-linecap="round"
       stroke-width="2"
     >
-      <path d="M5 5L19 19">
-        <animate
-          fill="freeze"
-          attributeName="d"
-          dur="0.4s"
-          values="M5 5L19 19;M5 5L19 5"
-        />
-      </path>
-      <path d="M12 12H12" opacity="0">
+      <path d="M5 5L19 5">
         <animate
           fill="freeze"
           attributeName="d"
           begin="0.2s"
           dur="0.4s"
-          values="M12 12H12;M5 12H19"
+          values="M5 5L19 5;M5 5L19 19"
         />
-        <set attributeName="opacity" begin="0.2s" to="1" />
       </path>
-      <path d="M5 19L19 5">
+      <path d="M5 12H19">
         <animate
           fill="freeze"
           attributeName="d"
           dur="0.4s"
-          values="M5 19L19 5;M5 19L19 19"
+          values="M5 12H19;M12 12H12"
+        />
+        <set attributeName="opacity" begin="0.4s" to="0" />
+      </path>
+      <path d="M5 19L19 19">
+        <animate
+          fill="freeze"
+          attributeName="d"
+          begin="0.2s"
+          dur="0.4s"
+          values="M5 19L19 19;M5 19L19 5"
         />
       </path>
     </g>

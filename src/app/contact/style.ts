@@ -70,4 +70,10 @@ export const Container = styled.main`
       justify-content: center;
     }
   }
+
+  @media (max-width: 768px) {
+    height: 100%;
+    padding: 6em 0;
+    align-items: start;
+  }
 `;

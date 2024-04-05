@@ -8,7 +8,6 @@ export const StyledFooter = styled.footer`
   display: flex;
   width: 100%;
   height: 4em;
-
   align-items: center;
   justify-content: center;
 
@@ -29,10 +28,11 @@ export const StyledFooter = styled.footer`
       align-items: center;
       justify-content: center;
 
-      & > div:nth-child(1) > svg {
+      & > a:nth-child(1) > svg {
         width: 20px;
         height: 20px;
       }
+
       & > a > svg {
         cursor: pointer;
         width: 22px;
@@ -43,16 +43,19 @@ export const StyledFooter = styled.footer`
           color: #000;
         }
       }
-      & > div:nth-child(4) > svg {
+      & > a:nth-child(4) > svg {
         width: 24px;
         height: 24px;
       }
     }
 
     @media (max-width: 768px) {
-      gap: 10px;
       align-items: center;
       flex-direction: column;
+
+      & > div {
+        display: none;
+      }
     }
   }
 `;
