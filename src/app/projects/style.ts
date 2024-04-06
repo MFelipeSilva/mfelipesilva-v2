@@ -18,7 +18,7 @@ export const Container = styled.main`
 
     & > h1 {
       font-size: clamp(25px, 3vw, 35px);
-      color: #000;
+      color: ${({ theme }) => theme.COLORS.SECONDARY};
       font-weight: 700;
 
       text-transform: uppercase;

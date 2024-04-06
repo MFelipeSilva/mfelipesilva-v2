@@ -13,6 +13,7 @@ import styled from "styled-components";
 import {
   IconBrazil,
   IconClose,
+  IconDarkMode,
   IconGlobe,
   IconLightMode,
   IconMenu,
@@ -50,7 +51,7 @@ export const StyledHeader = styled.header<IHeaderProps>`
       flex-direction: row;
 
       & > li > a {
-        color: #000;
+        color: ${({ theme }) => theme.COLORS.SECONDARY};
         font-size: 15px;
         padding: 9.5px 15px;
         border-radius: 8px;
@@ -84,7 +85,7 @@ export const StyledHeader = styled.header<IHeaderProps>`
         padding: 7px;
         border: none;
         outline: none;
-        color: #000;
+        color: ${({ theme }) => theme.COLORS.SECONDARY};
         border-radius: 8px;
         align-items: center;
         justify-content: center;
@@ -155,7 +156,7 @@ export const StyledHeader = styled.header<IHeaderProps>`
     z-index: 3;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
     box-shadow: 1px 0 15px 5px rgba(0, 0, 0, 0.1);
     visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
     transition: 0.55s ease-in-out;
@@ -170,7 +171,7 @@ export const StyledHeader = styled.header<IHeaderProps>`
       justify-content: center;
 
       & > li > a {
-        color: #000;
+        color: ${({ theme }) => theme.COLORS.SECONDARY};
         font-size: 25px;
         text-decoration: none;
         text-transform: uppercase;
@@ -211,16 +212,21 @@ const Content = styled.div`
   }
 `;
 
-export const Navbar = () => {
+interface INavbarProps {
+  theme: any;
+  toggleName: any;
+}
+
+export const Navbar = ({ theme, toggleName }: INavbarProps) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const onToggleScroll = () => {
+  const toggleScroll = () => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   };
 
   useEffect(() => {
-    onToggleScroll();
+    toggleScroll();
 
     return () => {
       document.body.style.overflow = "auto";
@@ -268,9 +274,15 @@ export const Navbar = () => {
             </Popover>
           </div>
           <div>
-            <button>
-              <IconLightMode />
-            </button>
+            {theme.typeTheme === "light" ? (
+              <button onClick={toggleName}>
+                <IconLightMode />
+              </button>
+            ) : (
+              <button onClick={toggleName}>
+                <IconDarkMode />
+              </button>
+            )}
           </div>
           <div>
             {isOpen ? (

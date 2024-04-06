@@ -1,13 +1,18 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 
 import { motion } from "framer-motion";
 
 import "@/utils/i18n";
 
+import GlobalStyle from "@/styles/global";
+
 import { Navbar } from "./navbar";
 import { Footer } from "./footer";
+
+import dark from "@/themes/dark";
+import light from "@/themes/light";
 
 interface ILayoutProps {
   children: ReactNode;
@@ -19,21 +24,38 @@ export const LayoutContainer = styled.div`
 `;
 
 export const Layout = ({ children }: ILayoutProps) => {
+  const [theme, setTheme] = useState(light);
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(JSON.parse(storedTheme));
+    }
+  }, []);
+  const toggleTheme = () => {
+    const changedTheme = theme.typeTheme === "dark" ? light : dark;
+    setTheme(changedTheme);
+    localStorage.setItem("theme", JSON.stringify(changedTheme));
+  };
+
   return (
-    <LayoutContainer>
-      <Navbar />
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.5, delay: 0.25 }}
-      >
-        {children}
-      </motion.div>
-      <Footer />
-    </LayoutContainer>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <LayoutContainer>
+        <Navbar theme={theme} toggleName={toggleTheme} />
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 0.25 }}
+        >
+          {children}
+        </motion.div>
+        <Footer />
+      </LayoutContainer>
+    </ThemeProvider>
   );
 };

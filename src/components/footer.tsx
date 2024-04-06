@@ -19,6 +19,7 @@ export const StyledFooter = styled.footer`
 
     & > span {
       font-size: 14px;
+      color: ${({ theme }) => theme.COLORS.SECONDARY};
       font-weight: 300;
     }
 
@@ -37,7 +38,7 @@ export const StyledFooter = styled.footer`
         cursor: pointer;
         width: 22px;
         height: 22px;
-        color: #343a40;
+        color: ${({ theme }) => theme.COLORS.TERTIARY};
 
         &:hover {
           color: #000;

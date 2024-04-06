@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import "../../styles/global.css";
-
 export const Container = styled.main`
   display: flex;
   min-height: 843px;
@@ -31,12 +29,12 @@ export const Container = styled.main`
 
       & > h1 {
         font-size: clamp(25px, 3vw, 35px);
-        color: #000;
+        color: ${({ theme }) => theme.COLORS.SECONDARY};
         font-weight: 700;
         text-transform: uppercase;
       }
       & > p {
-        color: #000;
+        color: ${({ theme }) => theme.COLORS.SECONDARY};
         font-size: clamp(14px, 3vw, 16px);
         font-weight: 300;
 

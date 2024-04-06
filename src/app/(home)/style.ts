@@ -30,20 +30,21 @@ export const Container = styled.main`
 
           & > h1 {
             font-size: clamp(35px, 3.5vw, 55px);
-            color: #000;
+            color: ${({ theme }) => theme.COLORS.SECONDARY};
             font-weight: 700;
             text-transform: uppercase;
           }
 
           & > h2 {
             font-size: clamp(22px, 2vw, 32px);
+            color: ${({ theme }) => theme.COLORS.SECONDARY};
             font-weight: 300;
           }
         }
 
         & > div:nth-child(2) {
           width: 305px;
-          border-bottom: 2px solid #000000;
+          border-bottom: 2px solid ${({ theme }) => theme.COLORS.SECONDARY};
 
           @media (max-width: 1280px) {
             width: 70%;
@@ -61,37 +62,51 @@ export const Container = styled.main`
           align-items: center;
           justify-content: center;
 
-          & > div > a > svg {
-            color: #000;
-            cursor: pointer;
-            transition: color 0.33s ease;
+          & > div > a {
+            display: flex;
+            width: min-content;
+            height: min-content;
+            align-items: center;
+            justify-content: center;
 
-            &:hover {
-              color: #7b2cbf;
+            & > svg {
+              color: ${({ theme }) => theme.COLORS.SECONDARY};
+              cursor: pointer;
+              transition: color 0.33s ease;
+
+              &:hover {
+                color: #7b2cbf;
+              }
             }
           }
 
           @media (max-width: 1024px) {
             & > div:nth-child(1) > a > svg {
               width: 35px;
+              height: 35px;
             }
             & > div > a > svg {
               width: 40px;
+              height: 40px;
             }
             & > div:nth-child(4) > a > svg {
               width: 43px;
+              height: 43px;
             }
           }
 
           @media (max-width: 520px) {
             & > div:nth-child(1) > a > svg {
-              width: 30px;
+              width: 31px;
+              height: 31px;
             }
             & > div > a > svg {
               width: 35px;
+              height: 35px;
             }
             & > div:nth-child(4) > a > svg {
               width: 38px;
+              height: 38px;
             }
           }
         }

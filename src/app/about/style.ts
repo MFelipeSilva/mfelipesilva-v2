@@ -28,12 +28,12 @@ export const Container = styled.main`
 
       & > h1 {
         font-size: clamp(25px, 3vw, 35px);
-        color: #000;
+        color: ${({ theme }) => theme.COLORS.SECONDARY};
         font-weight: 700;
         text-transform: uppercase;
       }
       & > p {
-        color: #000;
+        color: ${({ theme }) => theme.COLORS.SECONDARY};
         font-size: clamp(14px, 3vw, 16px);
         font-weight: 300;
       }
@@ -54,7 +54,7 @@ export const Container = styled.main`
 
       & > div > div > p {
         display: list-item;
-        color: #000;
+        color: ${({ theme }) => theme.COLORS.SECONDARY};
         font-size: clamp(14px, 3vw, 16px);
         font-weight: 300;
       }
