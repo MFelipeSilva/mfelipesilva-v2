@@ -8,7 +8,7 @@ import {
 export const iconsData = [
   {
     id: "1",
-    url: "https://drive.google.com/file/d/14l8NZRRPHmUBVJ2YEfhmCh_JdsUH1Uer/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1VOHxRWQycYBzI5gygpuz6W96YPHukHNl/view?usp=sharing",
     icon: <IconCurriculum />,
   },
   {
@@ -23,7 +23,7 @@ export const iconsData = [
   },
   {
     id: "4",
-    url: "https://www.instagram.com/mfelipesilva_/",
+    url: "https://www.instagram.com/mfelipesilva_",
     icon: <IconInstagram />,
   },
 ];

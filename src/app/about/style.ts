@@ -66,6 +66,7 @@ export const Container = styled.main`
 
     & > div:nth-child(2) {
       & > img {
+        pointer-events: none;
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
