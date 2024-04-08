@@ -2,14 +2,14 @@
   <img alt="Logo" src="https://i.ibb.co/zGSd4BW/logo-white.png" width="100" />
 </div>
 <h1 align="center">
-  <a href="https://mfelipesilva-v2.vercel.app/">Felipe Da Silva</a>
+  <a href="https://mfelipesilva-v2.vercel.app/">MFelipe Da Silva</a>
 </h1>
 </br>
 
 <img src="https://i.ibb.co/kyMRYpH/portfolio-light.png"/>
 
 
-## Running in development mode
+## 🚀 Running in development mode
 
 ```bash
 git clone https://github.com/MFelipeSilva/portfolio-v2.git
@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-## Building and deploying in production
+## 🛠 Building and deploying in production
 
 ```bash
 npm install
@@ -31,7 +31,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in the browser.
 
-## See the design of the pages on figma
+## 👀 See the design of the pages on figma
 
 [![Figma Portfólio](https://i.ibb.co/C0vJ7YV/figma.png)](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3idnpqN1ym24SeaOPqIcr5%2FPortfolio%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DMusvmjurZdXiNCTs-1)
 
