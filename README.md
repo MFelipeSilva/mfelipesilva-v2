@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="Logo" src="https://i.ibb.co/zGSd4BW/logo-white.png" width="100" />
+</div>
+<h1 align="center">
+  <a href="https://mfelipesilva-v2.vercel.app/">Felipe Da Silva</a>
+</h1>
+</br>
 
-## Getting Started
+<img src="https://i.ibb.co/kyMRYpH/portfolio-light.png"/>
 
-First, run the development server:
+
+## Running in development mode
 
 ```bash
+git clone https://github.com/MFelipeSilva/portfolio-v2.git
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Building and deploying in production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+npm run build
 
-## Learn More
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) in the browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## See the design of the pages on figma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[![Figma Portfólio](https://i.ibb.co/C0vJ7YV/figma.png)](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3idnpqN1ym24SeaOPqIcr5%2FPortfolio%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DMusvmjurZdXiNCTs-1)
 
-## Deploy on Vercel
+## 🎨 Color Reference
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Purple         | `#7B2CBF` |
+| Black          | `#000000` |
+| Dark           | `#1C1C21` |
+| Gray           | `#343A40` |
+| Light Gray     | `#ADB5BD` |
+| White          | `#FFFFFF` |
