@@ -40,6 +40,7 @@ export const Container = styled.main`
 
         & > span {
           font-weight: 600;
+          word-wrap: break-word;
         }
       }
 
