@@ -2,7 +2,7 @@
   <img alt="Logo" src="https://i.ibb.co/zGSd4BW/logo-white.png" width="100" />
 </div>
 <h1 align="center">
-  <a href="https://mfelipesilva-v2.vercel.app/">MFelipe Da Silva</a>
+  <a href="https://mfelipesilva-v2.vercel.app/">< MFelipe Da Silva /></a>
 </h1>
 </br>
 
