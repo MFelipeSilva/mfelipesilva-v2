@@ -33,7 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) in the browser.
 
 ## 👀 See the design of the pages on figma
 
-[![Figma Portfólio](https://i.ibb.co/C0vJ7YV/figma.png)](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3idnpqN1ym24SeaOPqIcr5%2FPortfolio%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DMusvmjurZdXiNCTs-1)
+[![Figma Portfólio](https://i.ibb.co/JkB0v3K/image.png)](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3idnpqN1ym24SeaOPqIcr5%2FPortfolio%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DMusvmjurZdXiNCTs-1)
 
 ## 🎨 Color Reference
 
