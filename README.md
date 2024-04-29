@@ -12,7 +12,7 @@
 ## 🚀 Running in development mode
 
 ```bash
-git clone https://github.com/MFelipeSilva/portfolio-v2.git
+https://github.com/MFelipeSilva/mfelipesilva-v2.git
 
 npm install
 
@@ -26,7 +26,7 @@ npm install
 
 npm run build
 
-npm run dev
+npm run start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in the browser.
