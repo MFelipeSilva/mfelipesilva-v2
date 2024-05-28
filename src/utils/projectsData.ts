@@ -9,11 +9,12 @@ export const projects = [
   },
   {
     id: "2",
-    title: "Clone Tesla",
-    url: "https://clonedtesla.vercel.app/",
-    github: "https://github.com/MFelipeSilva/clone-tesla",
-    imageUrl: "https://i.ibb.co/jJdsJr7/clone-tesla.gif",
-    technologies: ["React", "Styled Components", "Context API"],
+    title: "Esteban Lakatos",
+    url: "https://esteban-advocacy.vercel.app/",
+    github: "https://github.com/MFelipeSilva/landing-page-advocacy",
+    imageUrl:
+      "https://i.ibb.co/jvfTDyr/2024-05-18-16-52-51-online-video-cutter-com.gif",
+    technologies: ["React", "Styled Components", "Javascript"],
   },
   {
     id: "3",

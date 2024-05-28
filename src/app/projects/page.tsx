@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { useTranslation } from "react-i18next";
 
-import { projects } from "@/utils/data";
+import { projects } from "@/utils/projectsData";
 
 import { ProjectType } from "@/types/productsType";
 
