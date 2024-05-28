@@ -8,7 +8,7 @@ import {
 export const iconsData = [
   {
     id: "1",
-    url: "https://drive.google.com/file/d/1FOlticew1fmrWVgTnoQuZTi-VrigunUS/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1vTrsU9ZaAQF6QL3WCowMAbffhbz-ZIRl/view?usp=sharing",
     icon: <IconCurriculum />,
   },
   {
