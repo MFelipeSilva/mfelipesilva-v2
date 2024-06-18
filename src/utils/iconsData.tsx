@@ -23,7 +23,7 @@ export const iconsData = [
   },
   {
     id: "4",
-    url: "https://www.instagram.com/mfelipesilva_",
+    url: "https://www.instagram.com/mfelipedsilva",
     icon: <IconInstagram />,
   },
 ];

@@ -65,7 +65,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <div>
-        <span>© Copyright 2024 - Felipe Da Silva</span>
+        <span>© Copyright 2024 - Mauricio Felipe Silva</span>
         <div>
           {iconsData.map((icon) => (
             <Link key={icon.id} href={icon.url} target="_blank">

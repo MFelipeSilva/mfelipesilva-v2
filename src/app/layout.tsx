@@ -4,7 +4,7 @@ import { Lexend } from "next/font/google";
 const inter = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Felipe Da Silva | Developer Web Full-stack",
+  title: "Mauricio Felipe Silva | Developer Front-end & Full-stack",
   description: "Portfolio of a full-stack developer.",
 };
 

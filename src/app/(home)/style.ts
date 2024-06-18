@@ -36,7 +36,7 @@ export const Container = styled.main`
           }
 
           & > h2 {
-            font-size: clamp(22px, 2vw, 32px);
+            font-size: clamp(20px, 2vw, 31px);
             color: ${({ theme }) => theme.COLORS.SECONDARY};
             font-weight: 300;
           }
