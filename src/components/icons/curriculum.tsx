@@ -1,8 +1,8 @@
 export const IconCurriculum = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="44px"
-    height="44px"
+    width="42px"
+    height="42px"
     viewBox="0 0 26 26"
   >
     <g fill="none">
@@ -29,10 +29,11 @@ export const IconCurriculum = () => (
           </g>
         </mask>
       </defs>
-      <circle
-        cx="13"
-        cy="13"
-        r="13"
+      <rect
+        width="26"
+        height="26"
+        rx="6"
+        ry="6"
         fill="currentColor"
         mask="url(#pepiconsPopCvCircleFilled0)"
       />
