@@ -29,16 +29,16 @@ export const Container = styled.main`
           padding: 1em 0;
 
           & > h1 {
-            font-size: clamp(30px, 3.5vw, 55px);
+            font-size: clamp(30px, 3.5vw, 54px);
             color: ${({ theme }) => theme.COLORS.SECONDARY};
             font-weight: 700;
             text-transform: uppercase;
           }
 
           & > h2 {
-            font-size: clamp(18px, 2vw, 31px);
+            font-size: clamp(26px, 3vw, 47px);
             color: ${({ theme }) => theme.COLORS.SECONDARY};
-            font-weight: 300;
+            font-weight: 200;
           }
         }
 
